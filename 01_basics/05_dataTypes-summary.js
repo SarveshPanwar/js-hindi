@@ -42,6 +42,40 @@ const myFunction = function(){
 //
 
 
-console.log(typeof id);
+// console.log(typeof id);
 
 
+
+
+// ********************** Memory *********************************
+
+// Stack Memory(Primitive types), Heap Memory(Non-Primitive types)
+
+/* when a variable/object is defined/declared in stack memory, we get a COPY of the variable/object*/
+/* when a variable/object is defined/declared in heap memory, we get a REFERENCE of the variable/object*/
+
+let myYoutubeName = "sarveshpanwar"
+
+let anotherName = myYoutubeName
+anotherName = "chaiaurcode"
+
+// console.log(myYoutubeName);
+// console.log(anotherName);
+
+
+let userOne = {
+    email: "user1@google.com",
+    upi: "user1@ybl",
+}
+
+let userTwo = userOne;
+
+console.log(userOne);
+console.log(userTwo);
+
+
+userOne.email = "user2@google.com"
+userOne.upi = "user2@ybl"
+
+console.log(userOne);
+console.log(userTwo);
